@@ -1,0 +1,4 @@
+En bases de datos, los puertos que se usan normalmente son los mismos tanto en desarrollo como en producción. Oracle trabaja por defecto con el puerto 1521, que es el del listener y casi siempre se mantiene igual, 
+solo que en producción se protege con reglas de red. SQL Server usa el puerto 1433, que es el estándar para conexiones TCP, aunque en algunos entornos productivos puede cambiarse por seguridad. MySQL (y MariaDB) utilizan el puerto 3306, el más común,
+y en producción lo habitual es que no esté expuesto a internet, sino accesible solo desde la red interna. En el caso de Django, 
+durante el desarrollo se suele usar el puerto 8000 con el servidor interno (runserver), mientras que en producción la aplicación se sirve normalmente a través de un servidor web como Nginx o Apache, usando los puertos 80 para HTTP o 443 para HTTPS.
