@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Verificación PIN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h2>Verificación 2FA</h2>
+
+        <!-- Usuario oculto -->
+        <input
+            type="hidden"
+            id="usuario">
+
+        <input
+            type="text"
+            id="pin"
+            placeholder="Ingrese el PIN">
+
+        <button onclick="validarPIN()">
+
+            OK
+
+        </button>
+
+        <p id="respuesta"></p>
+
+    </div>
+
+    <script src="pin.js"></script>
+
+</body>
+
+</html>UY
